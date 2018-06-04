@@ -1,0 +1,18 @@
+<view style='height:{{fullScreenHeight}}px'>
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="20" controls="{{controls}}" bindtap="clickMap" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location='true' style="width: 100%; height: {{mapHeight}}px;"></map>
+<view>
+  <scroll-view scroll-y style='height:{{scrollHeight}}px' scroll-top="100px">
+  <view>
+  <view class='dataTitle'>所在位置</view>
+  <view class='showMapData' wx:if="{{showMapData}}">{{showPointData[0].name}}</view>
+  <view class='showMapData' wx:if="{{showMapData}}">{{showPointData[0].info}}</view>
+  <view class='showMapData' wx:else>所在点无介绍</view>
+  </view>
+  <view wx:if="{{showMarkersMapData}}">
+  <view class='dataTitle'>彩色标记位置</view>
+  <view class='showMapData' wx:if="{{showMarkersMapData}}">{{showPointData[1].name}}</view>
+  <view class='showMapData' wx:if="{{showMarkersMapData}}">{{showPointData[1].info}}</view>
+  </view>
+  </scroll-view>
+</view>
+</view>

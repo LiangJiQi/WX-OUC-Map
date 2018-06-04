@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/map/map",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#70DB93",
+    "navigationBarTitleText": "OUC地图",
+    "navigationStyle":"showMapData",
+    "navigationBarTextStyle":"black"
+  }
+}
