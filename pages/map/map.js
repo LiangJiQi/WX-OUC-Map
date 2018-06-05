@@ -5,14 +5,6 @@ const app = getApp();
 var QQMapWX = require('../../lib/qqmap-wx-jssdk.js');
 var qqmapsdk;
 
-function updata(that) {
-  that.findMapData(that);
-  var timer = setTimeout(function () {
-    updata(that);
-  }
-    , 500)
-};
-
 var MapData = require('../map/mapData.js')
 
 
@@ -81,72 +73,72 @@ Page({
       position: {
         left: 0,
         top:0,
-        width: 50,
-        height: 50
+        width: 40,
+        height: 40
       },
       clickable: true
     }]
   },
+    
+    findMapData: function (that) {
+      for (var i = 0; i < that.data.mapDataList.MapDataList.length; i++) {
+        var temp1 = 'markers[0].title'
+        var temp2 = 'markers[0].callout.content'
+        if (that.data.latitude <= that.data.mapDataList.MapDataList[i].latitude1 && that.data.latitude >= that.data.mapDataList.MapDataList[i].latitude2 && that.data.mapDataList.MapDataList[i].longitude1 >= that.data.longitude && that.data.mapDataList.MapDataList[i].longitude2 <= that.data.longitude) {
 
-   findMapData:function (that) {
-    for(var i = 0;i < that.data.mapDataList.MapDataList.length;i++){
-      var temp1 = 'markers[0].title'
-      var temp2 = 'markers[0].callout.content'
-      if (that.data.latitude <= that.data.mapDataList.MapDataList[i].latitude1 && that.data.latitude >= that.data.mapDataList.MapDataList[i].latitude2 && that.data.mapDataList.MapDataList[i].longitude1 >= that.data.longitude && that.data.mapDataList.MapDataList[i].longitude2 <= that.data.longitude) {
-
-      var temp = 'showPointData[0]'
-      that.setData({
-        [temp]:that.data.mapDataList.MapDataList[i],
-        [temp1]:that.data.mapDataList.MapDataList[i].name,
-        [temp2]: that.data.mapDataList.MapDataList[i].name,
-        showMapData: true
-      })
-      break;
-    }
-    else if (i == that.data.mapDataList.MapDataList.length-1){
-      if(that.data.markers[0].title == ""){
-        that.setData({
-          showMapData: false
-        })
-      }
-      else{
-      that.setData({
-        [temp1]:"",
-        [temp2]:"暂无介绍>_<",
-        showMapData: false
-      })
-      }
-    }
-   }
-    for (var i = 0; i < that.data.mapDataList.MapDataList.length; i++) {
-      var temp1 = 'markers[1].title'
-      var temp2 = 'markers[1].callout.content'
-      if (that.data.markers[1].latitude <= that.data.mapDataList.MapDataList[i].latitude1 && that.data.markers[1].latitude >= that.data.mapDataList.MapDataList[i].latitude2 && that.data.mapDataList.MapDataList[i].longitude1 >= that.data.markers[1].longitude && that.data.mapDataList.MapDataList[i].longitude2 <= that.data.markers[1].longitude ) {
-      var temp = 'showPointData[1]'
-      that.setData({
-        [temp]:that.data.mapDataList.MapDataList[i],
-        [temp1]: that.data.mapDataList.MapDataList[i].name,
-        [temp2]: that.data.mapDataList.MapDataList[i].name,
-        showMarkersMapData: true
-      })
-      break;
-    }
-    else if(i == that.data.mapDataList.MapDataList.length-1){
-        if (that.data.markers[1].title == ""){
+          var temp = 'showPointData[0]'
           that.setData({
-            showMarkersMapData: false
+            [temp]: that.data.mapDataList.MapDataList[i],
+            [temp1]: that.data.mapDataList.MapDataList[i].name,
+            [temp2]: that.data.mapDataList.MapDataList[i].name,
+            showMapData: true
           })
+          break;
         }
-          else{
-      that.setData({
-        [temp1]: "",
-        [temp2]: "暂无介绍>_<",
-        showMarkersMapData: false
-      })
+        else if (i == that.data.mapDataList.MapDataList.length - 1) {
+          if (that.data.markers[0].title == "") {
+            that.setData({
+              showMapData: false
+            })
           }
-    }
-    }
-  },
+          else {
+            that.setData({
+              [temp1]: "",
+              [temp2]: "暂无介绍>_<",
+              showMapData: false
+            })
+          }
+        }
+      }
+      for (var i = 0; i < that.data.mapDataList.MapDataList.length; i++) {
+        var temp1 = 'markers[1].title'
+        var temp2 = 'markers[1].callout.content'
+        if (that.data.markers[1].latitude <= that.data.mapDataList.MapDataList[i].latitude1 && that.data.markers[1].latitude >= that.data.mapDataList.MapDataList[i].latitude2 && that.data.mapDataList.MapDataList[i].longitude1 >= that.data.markers[1].longitude && that.data.mapDataList.MapDataList[i].longitude2 <= that.data.markers[1].longitude) {
+          var temp = 'showPointData[1]'
+          that.setData({
+            [temp]: that.data.mapDataList.MapDataList[i],
+            [temp1]: that.data.mapDataList.MapDataList[i].name,
+            [temp2]: that.data.mapDataList.MapDataList[i].name,
+            showMarkersMapData: true
+          })
+          break;
+        }
+        else if (i == that.data.mapDataList.MapDataList.length - 1) {
+          if (that.data.markers[1].title == "") {
+            that.setData({
+              showMarkersMapData: false
+            })
+          }
+          else {
+            that.setData({
+              [temp1]: "",
+              [temp2]: "暂无介绍>_<",
+              showMarkersMapData: false
+            })
+          }
+        }
+      }
+    },
   onLoad: function () {
     var that =this;
     that.setData({
@@ -197,7 +189,7 @@ Page({
         that.setData({
           [temp]:res.latitude,
           [temp1]:res.longitude,
-          [temp2]: " ",
+          [temp2]: "",
         })
       }
     })
@@ -224,8 +216,6 @@ Page({
     
   },
 
-  
-
   onShow:function(){
     var that = this;
     wx.getLocation({
@@ -246,19 +236,25 @@ Page({
         var temp = 'controls[0].position.left'
         var temp1 = 'controls[0].position.top'
         that.setData({
-          mapHeight: res.windowHeight * 0.7,
+          mapHeight: res.windowHeight * 0.6,
           [temp]: res.windowWidth - 60,
-          [temp1]: res.windowHeight * 0.7 - 60,
-          scrollHeight: res.windowHeight * 0.3,
+          [temp1]: res.windowHeight * 0.6 - 60,
+          scrollHeight: res.windowHeight * 0.4,
           fullScreenHeight: res.windowHeight
         })
       },
     })
     
-    updata(this);
+    this.updata(this);
   },
 
- 
+  updata: function (that) {
+    that.findMapData(that);
+    var timer = setTimeout(function () {
+      that.updata(that);
+    }
+      , 500)
+  },
 
 
   getUserInfo: function (e) {

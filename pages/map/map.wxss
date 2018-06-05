@@ -33,6 +33,8 @@
   color: #FFFFFF;
   font-weight: bold;
   display: flex;
+  border: 1px solid lightgray;
+  border-radius: 20px;
   align-content: center;
   justify-content: center;
 }
