@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/map/map",
+    "pages/navigation/navigation",
     "pages/logs/logs"
   ],
   "window":{
@@ -9,5 +10,21 @@
     "navigationBarTitleText": "OUC地图",
     "navigationStyle":"showMapData",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "color": "#000000",
+    "selectedColor": "#70DB93",
+    "list": [{
+      "pagePath": "pages/map/map",
+      "text": "瞧一瞧",
+      "iconPath": "icon/resources/school.png",
+      "selectedIconPath":"icon/resources/school.png"
+    },{
+      "pagePath": "pages/navigation/navigation",
+      "text": "逛一逛",
+      "iconPath": "icon/resources/direction.png",
+      "selectedIconPath": "icon/resources/direction.png"
+    }]
   }
 }
