@@ -1,0 +1,12 @@
+<!--pages/navigation/navigation.wxml-->
+<view class='viewContentmain' style='height:{{viewcontent}}px'>
+<view class='viewContentinputmain'>
+<view class='viewContentinput'>
+<input class='input' type='text' confirm-type='search'  placeholder-class='placeholderContent' placeholder-style='color:#70DB93;margin:auto' placeholder="仅支持校内哦"></input>
+</view>
+</view>
+<view class='viewContent'>
+<button style='background-color:#70DB93 ; height:30px' size='mini' type='primary'>搜索地点</button>
+</view>
+
+</view>
