@@ -2,10 +2,14 @@
 //获取应用实例
 const app = getApp()
 
+var MapData = require('../map/mapData.js')
+
 Page({
   data: {
     viewcontent:250,
     getfocus:false,
+    searchMapData:"",
+    mess:"",
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -47,7 +51,7 @@ Page({
     wx.getSystemInfo({
       success: function(res) {
         that.setData({
-          viewcontent:res.windowHeight*0.8
+          viewcontent:res.windowHeight*0.3
         })
       },
       fail: function(res) {},
@@ -56,7 +60,33 @@ Page({
 
   },
 
+  getValue:function(e){
+    var that = this;
+    that.setData({
+      mess:"",
+      searchMapData: e.detail.value
+    })
+
+  },
+
+  search: function(){
+   if(this.data.searchMapData == ""){
+      wx.showModal({
+        title: '提示',
+        content: '搜索内容为空！',
+      })
+   }
+   else {
+     this.setData({
+       mess: "搜索结果为："
+     })
+
+   }
+
+  },
  
+
+
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo

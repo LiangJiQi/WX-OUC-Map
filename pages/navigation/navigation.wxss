@@ -35,7 +35,7 @@
 
 .viewContentinputmain{
   width: 100%;
-  height: 100px;
+  height: 50px;
   display: flex;
   align-content: center;
   justify-content: center;
