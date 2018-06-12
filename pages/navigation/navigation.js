@@ -3,13 +3,18 @@
 const app = getApp()
 
 var MapData = require('../map/mapData.js')
+import ans from 'ans.js'
 
 Page({
   data: {
-    viewcontent:250,
+    viewSearch:250,
+    viewAns:500,
     getfocus:false,
     searchMapData:"",
     mess:"",
+    MapDataList:[],
+    searchAns:[],
+    fullWindows:700,
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -51,25 +56,30 @@ Page({
     wx.getSystemInfo({
       success: function(res) {
         that.setData({
-          viewcontent:res.windowHeight*0.3
+          viewSearch:res.windowHeight*0.2,
+          viewAns:res.windowHeight*0.8-24.6,
+          fullWindows:res.windowHeight
         })
       },
       fail: function(res) {},
       complete: function(res) {},
     })
-
+    that.setData({
+      MapDataList:MapData
+    })
   },
 
   getValue:function(e){
     var that = this;
     that.setData({
-      mess:"",
       searchMapData: e.detail.value
     })
 
   },
 
   search: function(){
+    ans.ansLaLo.latitude = 0
+    ans.ansLaLo.longitude = 0
    if(this.data.searchMapData == ""){
       wx.showModal({
         title: '提示',
@@ -77,15 +87,38 @@ Page({
       })
    }
    else {
-     this.setData({
-       mess: "搜索结果为："
-     })
-
+     var j = 0
+     for (var i = 0;i < this.data.MapDataList.MapDataList.length;i++){
+       if(this.data.MapDataList.MapDataList[i].name.indexOf(this.data.searchMapData) >= 0){
+         var temp1 = "searchAns["+j+"].name"
+         var temp2 = "searchAns["+j+"].info"
+         var temp3 = "searchAns["+j+"].index"
+         this.setData({
+           mess: "搜索结果为：",
+           [temp1]:this.data.MapDataList.MapDataList[i].name,
+           [temp2]:this.data.MapDataList.MapDataList[i].info,
+           [temp3]:i
+         })
+         j++;
+       }
+       }
+     if (j == 0) {
+       wx.showModal({
+         title: '提示',
+         content: '搜不到>_<  请尝试修改搜索词',
+       })
+     }
    }
-
   },
  
-
+  toShowMap:function(e){
+      var mapAns = e.currentTarget.dataset.org;
+      ans.ansLaLo.latitude = this.data.MapDataList.MapDataList[mapAns].latitude3
+      ans.ansLaLo.longitude = this.data.MapDataList.MapDataList[mapAns].longitude3
+      wx.switchTab({
+        url: '../map/map',
+      })
+  },
 
   getUserInfo: function(e) {
     console.log(e)

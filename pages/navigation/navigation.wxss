@@ -22,6 +22,7 @@
 
 .viewContent{
   width: 100%;
+  height:30px;
   display: flex;
   justify-content: center;
 }
@@ -56,5 +57,12 @@
 .placeholderContent{
   font-weight: bold;
   color: #70DB93;
+}
 
+.searchAnsbutton{
+  color: white;
+  background-color:#70DB93;
+  height: 80px;
+  border: 1px solid lightgray;
+  line-height: 30px;
 }

@@ -6,7 +6,7 @@ var QQMapWX = require('../../lib/qqmap-wx-jssdk.js');
 var qqmapsdk;
 
 var MapData = require('../map/mapData.js')
-
+import ans from '../navigation/ans.js'
 
 Page({
   data: {
@@ -84,7 +84,7 @@ Page({
       for (var i = 0; i < that.data.mapDataList.MapDataList.length; i++) {
         var temp1 = 'markers[0].title'
         var temp2 = 'markers[0].callout.content'
-        if (that.data.latitude <= that.data.mapDataList.MapDataList[i].latitude1 && that.data.latitude >= that.data.mapDataList.MapDataList[i].latitude2 && that.data.mapDataList.MapDataList[i].longitude1 >= that.data.longitude && that.data.mapDataList.MapDataList[i].longitude2 <= that.data.longitude) {
+        if (that.data.markers[0].latitude <= that.data.mapDataList.MapDataList[i].latitude1 && that.data.markers[0].latitude >= that.data.mapDataList.MapDataList[i].latitude2 && that.data.mapDataList.MapDataList[i].longitude1 >= that.data.markers[0].longitude && that.data.mapDataList.MapDataList[i].longitude2 <= that.data.markers[0].longitude) {
 
           var temp = 'showPointData[0]'
           that.setData({
@@ -193,7 +193,8 @@ Page({
         })
       }
     })
-    
+    ans.ansLaLo.latitude = 0
+    ans.ansLaLo.longitude = 0
 
   },
   controltap: function () {
@@ -224,8 +225,8 @@ Page({
         var temp = 'markers[0].latitude'
         var temp1 = 'markers[0].longitude'
         that.setData({
-          latitude: res.latitude,
-          longitude: res.longitude,
+          //latitude: res.latitude,
+          //longitude: res.longitude,
           [temp]: res.latitude,
           [temp1]: res.longitude,
         })
@@ -245,6 +246,17 @@ Page({
       },
     })
     
+    if(ans.ansLaLo.latitude != 0 || ans.ansLaLo.longitude != 0){
+      var temp = 'markers[1].latitude'
+      var temp1 = 'markers[1].longitude'
+      that.setData({
+        latitude: ans.ansLaLo.latitude,
+        longitude: ans.ansLaLo.longitude,
+        [temp]:ans.ansLaLo.latitude,
+        [temp1]: ans.ansLaLo.longitude
+      })
+    }
+
     this.updata(this);
   },
 
