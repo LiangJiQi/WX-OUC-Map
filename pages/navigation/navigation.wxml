@@ -3,7 +3,7 @@
 <view class='viewContentmain' style='height:{{viewSearch}}px'>
 <view class='viewContentinputmain'>
 <view class='viewContentinput'>
-<input class='input' type='text' name='searchInput' confirm-type='search'  placeholder-class='placeholderContent' placeholder-style='color:#70DB93;margin:auto' placeholder="搜索校内效果更佳哦" bindinput='getValue' bindconfirm='ToSearch'></input>
+<input class='input' type='text' name='searchInput' confirm-type='search'  placeholder-class='placeholderContent' placeholder-style='color:#70DB93;margin:auto' placeholder="限校内搜索哦" bindinput='getValue' bindconfirm='ToSearch'></input>
 </view>
 </view>
 <view class='viewContent'>
