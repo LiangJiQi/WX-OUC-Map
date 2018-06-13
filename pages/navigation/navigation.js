@@ -80,6 +80,9 @@ Page({
   search: function(){
     ans.ansLaLo.latitude = 0
     ans.ansLaLo.longitude = 0
+    this.setData({
+      searchAns:[]
+    })
    if(this.data.searchMapData == ""){
       wx.showModal({
         title: '提示',
