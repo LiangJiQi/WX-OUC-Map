@@ -17,6 +17,7 @@ Page({
     fullScreenHeight:700,
     showMapData:false,
     showMarkersMapData:false,
+    moveMap:false,
     mapDataList:[],
     showPointData:[{
       id: 0,
@@ -87,12 +88,13 @@ Page({
         if (that.data.markers[0].latitude <= that.data.mapDataList.MapDataList[i].latitude1 && that.data.markers[0].latitude >= that.data.mapDataList.MapDataList[i].latitude2 && that.data.mapDataList.MapDataList[i].longitude1 >= that.data.markers[0].longitude && that.data.mapDataList.MapDataList[i].longitude2 <= that.data.markers[0].longitude) {
 
           var temp = 'showPointData[0]'
-          if(that.data.showMapData == false){
+          if(that.data.moveMap == false){
           that.setData({
             [temp]: that.data.mapDataList.MapDataList[i],
             [temp1]: that.data.mapDataList.MapDataList[i].name,
             [temp2]: that.data.mapDataList.MapDataList[i].name,
-            showMapData: true
+            showMapData: true,
+            moveMap:true
           })
           }
           break;
@@ -117,12 +119,13 @@ Page({
         var temp2 = 'markers[1].callout.content'
         if (that.data.markers[1].latitude <= that.data.mapDataList.MapDataList[i].latitude1 && that.data.markers[1].latitude >= that.data.mapDataList.MapDataList[i].latitude2 && that.data.mapDataList.MapDataList[i].longitude1 >= that.data.markers[1].longitude && that.data.mapDataList.MapDataList[i].longitude2 <= that.data.markers[1].longitude) {
           var temp = 'showPointData[1]'
-          if(that.data.showMarkersMapData == false){
+          if(that.data.moveMap == false){
           that.setData({
             [temp]: that.data.mapDataList.MapDataList[i],
             [temp1]: that.data.mapDataList.MapDataList[i].name,
             [temp2]: that.data.mapDataList.MapDataList[i].name,
-            showMarkersMapData: true
+            showMarkersMapData: true,
+            moveMap:true
           })
         }
           break;
@@ -194,6 +197,7 @@ Page({
           [temp]:res.latitude,
           [temp1]:res.longitude,
           [temp2]: "",
+          moveMap:false
         })
       }
     })
