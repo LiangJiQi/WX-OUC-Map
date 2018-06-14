@@ -87,12 +87,14 @@ Page({
         if (that.data.markers[0].latitude <= that.data.mapDataList.MapDataList[i].latitude1 && that.data.markers[0].latitude >= that.data.mapDataList.MapDataList[i].latitude2 && that.data.mapDataList.MapDataList[i].longitude1 >= that.data.markers[0].longitude && that.data.mapDataList.MapDataList[i].longitude2 <= that.data.markers[0].longitude) {
 
           var temp = 'showPointData[0]'
+          if(that.data.showMapData == false){
           that.setData({
             [temp]: that.data.mapDataList.MapDataList[i],
             [temp1]: that.data.mapDataList.MapDataList[i].name,
             [temp2]: that.data.mapDataList.MapDataList[i].name,
             showMapData: true
           })
+          }
           break;
         }
         else if (i == that.data.mapDataList.MapDataList.length - 1) {
@@ -115,12 +117,14 @@ Page({
         var temp2 = 'markers[1].callout.content'
         if (that.data.markers[1].latitude <= that.data.mapDataList.MapDataList[i].latitude1 && that.data.markers[1].latitude >= that.data.mapDataList.MapDataList[i].latitude2 && that.data.mapDataList.MapDataList[i].longitude1 >= that.data.markers[1].longitude && that.data.mapDataList.MapDataList[i].longitude2 <= that.data.markers[1].longitude) {
           var temp = 'showPointData[1]'
+          if(that.data.showMarkersMapData == false){
           that.setData({
             [temp]: that.data.mapDataList.MapDataList[i],
             [temp1]: that.data.mapDataList.MapDataList[i].name,
             [temp2]: that.data.mapDataList.MapDataList[i].name,
             showMarkersMapData: true
           })
+        }
           break;
         }
         else if (i == that.data.mapDataList.MapDataList.length - 1) {

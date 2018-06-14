@@ -20,9 +20,15 @@
   margin-top: 200px;
 }
 
+.background{
+  background-image: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3766885406,2990292942&fm=27&gp=0.jpg);
+  background-size: cover;
+}
+
 .viewContent{
   width: 100%;
   height:30px;
+  
   display: flex;
   justify-content: center;
 }
@@ -59,10 +65,18 @@
   color: #70DB93;
 }
 
-.searchAnsbutton{
-  color: white;
-  background-color:#70DB93;
+.searchAnsbuttonmain{
   height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.searchAnsbutton{
+  width: 90%;
+  color: white;
+  background-color:#DFCEFF;
+  height: 76px;
   border: 1px solid lightgray;
   line-height: 30px;
 }

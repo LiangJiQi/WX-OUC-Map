@@ -57,7 +57,7 @@ Page({
       success: function(res) {
         that.setData({
           viewSearch:res.windowHeight*0.2,
-          viewAns:res.windowHeight*0.8-24.6,
+          viewAns:res.windowHeight*0.8,
           fullWindows:res.windowHeight
         })
       },

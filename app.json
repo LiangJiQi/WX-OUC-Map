@@ -6,7 +6,7 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#70DB93",
+    "navigationBarBackgroundColor": "#A8EFFB",
     "navigationBarTitleText": "OUC地图",
     "navigationStyle":"showMapData",
     "navigationBarTextStyle":"black"
@@ -14,7 +14,7 @@
   "tabBar": {
     "borderStyle": "black",
     "color": "#000000",
-    "selectedColor": "#70DB93",
+    "selectedColor": "#98DFEB",
     "list": [{
       "pagePath": "pages/map/map",
       "text": "瞧一瞧",

@@ -1,21 +1,27 @@
 <!--pages/navigation/navigation.wxml-->
-<view style='height:{{fullWindows}}px'>
+<view class='background' style='height:{{fullWindows}}px'>
 <view class='viewContentmain' style='height:{{viewSearch}}px'>
 <view class='viewContentinputmain'>
+
 <view class='viewContentinput'>
-<input class='input' type='text' name='searchInput' confirm-type='search'  placeholder-class='placeholderContent' placeholder-style='color:#70DB93;margin:auto' placeholder="限校内搜索哦" bindinput='getValue' bindconfirm='ToSearch'></input>
-</view>
-</view>
-<view class='viewContent'>
-<button style='background-color: #70DB93;' size='mini' type='primary' bindtap='search'>搜索地点</button>
-</view>
+<input class='input' type='text' name='searchInput' confirm-type='search'  placeholder-class='placeholderContent' placeholder-style='color:#A0A0A0;margin:auto' placeholder="限校内搜索哦" bindinput='getValue' bindconfirm='ToSearch'></input>
 </view>
 
-<view >
-<view style='color:#70DB93'>{{mess}}</view>
-<scroll-view style='height:{{viewAns}}px' scroll-y scroll-top="100px">
+</view>
+
+<view class='viewContent'>
+<button style='background-color: #A8EFFB;color: #A0AFA9;' size='mini' type='primary' bindtap='search'>搜索地点</button>
+</view>
+
+</view>
+
+<view>
+<view style='color:#A0A0A0'>{{mess}}</view>
+<scroll-view style='height:{{viewAns-30}}px' scroll-y scroll-top="100px">
 <view wx:for="{{searchAns}}" wx:key="index">
+<view class='searchAnsbuttonmain'>
 <button class='searchAnsbutton' data-org='{{item.index}}' bindtap='toShowMap'><text>{{item.name}}\n{{item.info}}</text></button>
+</view>
 </view>
 </scroll-view>
 </view>
