@@ -88,15 +88,12 @@ Page({
         if (that.data.markers[0].latitude <= that.data.mapDataList.MapDataList[i].latitude1 && that.data.markers[0].latitude >= that.data.mapDataList.MapDataList[i].latitude2 && that.data.mapDataList.MapDataList[i].longitude1 >= that.data.markers[0].longitude && that.data.mapDataList.MapDataList[i].longitude2 <= that.data.markers[0].longitude) {
 
           var temp = 'showPointData[0]'
-          if(that.data.moveMap == false){
           that.setData({
             [temp]: that.data.mapDataList.MapDataList[i],
             [temp1]: that.data.mapDataList.MapDataList[i].name,
             [temp2]: that.data.mapDataList.MapDataList[i].name,
             showMapData: true,
-            moveMap:true
           })
-          }
           break;
         }
         else if (i == that.data.mapDataList.MapDataList.length - 1) {
@@ -197,9 +194,11 @@ Page({
           [temp]:res.latitude,
           [temp1]:res.longitude,
           [temp2]: "",
-          moveMap:false
         })
       }
+    })
+    this.setData({
+      moveMap: false
     })
     ans.ansLaLo.latitude = 0
     ans.ansLaLo.longitude = 0
@@ -261,7 +260,8 @@ Page({
         latitude: ans.ansLaLo.latitude,
         longitude: ans.ansLaLo.longitude,
         [temp]:ans.ansLaLo.latitude,
-        [temp1]: ans.ansLaLo.longitude
+        [temp1]: ans.ansLaLo.longitude,
+        moveMap:false
       })
     }
     ans.ansLaLo.latitude = 0
