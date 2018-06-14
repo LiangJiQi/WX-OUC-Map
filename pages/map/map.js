@@ -264,7 +264,8 @@ Page({
         [temp1]: ans.ansLaLo.longitude
       })
     }
-
+    ans.ansLaLo.latitude = 0
+    ans.ansLaLo.longitude = 0
     this.updata(this);
   },
 
