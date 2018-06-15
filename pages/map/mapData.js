@@ -433,11 +433,11 @@ var MapData = [
   {
     id: 658322,
     latitude1: 36.063024,
-    latitude2: 36.062946,
+    latitude2: 36.062929,
     longitude1: 120.335113,
-    longitude2: 120.335060,
-    latitude3: 36.062085,
-    longitude3: 120.335086,
+    longitude2: 120.335022,
+    latitude3: 36.062959,
+    longitude3: 120.335049,
     name: '鱼山二号门',
     info: ""
   },
@@ -814,8 +814,8 @@ var MapData = [
         longitude2: 120.498036,
         latitude3: 36.165163,
         longitude3: 120.498497,
-        name: '大',
-        info: ""
+        name: '大学生中心',
+        info: "各类社团活动和工作中心"
       },
       {
         id: 99993,

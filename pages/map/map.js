@@ -188,13 +188,13 @@ Page({
     var that = this
     wx.showModal({
       title: '提示',
-      content: '即将打开腾讯地图进行导航',
+      content: '即将打开外部地图进行导航',
       success:function(e){
         wx.openLocation({
           latitude: that.data.markers[markerid].latitude,
           longitude: that.data.markers[markerid].longitude,
           name:that.data.markers[markerid].callout.content,
-          scale:18
+          scale:28
         })
       }
     })
