@@ -21,7 +21,7 @@
 }
 
 .background{
-  background-image: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3766885406,2990292942&fm=27&gp=0.jpg);
+  background-image: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1066805458,728955578&fm=27&gp=0.jpg);
   background-size: cover;
 }
 

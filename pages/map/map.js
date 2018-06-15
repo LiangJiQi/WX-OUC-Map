@@ -45,8 +45,9 @@ Page({
       callout:{
         content:"暂无介绍>_<",
         color: "#FFFFFF",
-        bgColor:"#70DB93",
+        bgColor:"#98DFEB",
         display:'ALWAYS',
+        borderRadius:5,
         textAlign:"center"
       },
       width: 32,
@@ -61,9 +62,10 @@ Page({
        callout: {
          content: "暂无介绍>_<",
          color: "#FFFFFF",
-         bgColor: "#70DB93",
+         bgColor: "#98DFEB",
          display: 'ALWAYS',
-         textAlign: "center"
+         textAlign: "center",
+         borderRadius: 5,
        },
        width:32,
        height:32
@@ -181,6 +183,22 @@ Page({
    
   },
 
+  markertap:function(e){
+    var markerid = e.markerId
+    var that = this
+    wx.showModal({
+      title: '提示',
+      content: '即将打开腾讯地图进行导航',
+      success:function(e){
+        wx.openLocation({
+          latitude: that.data.markers[markerid].latitude,
+          longitude: that.data.markers[markerid].longitude,
+          name:that.data.markers[markerid].callout.content,
+          scale:18
+        })
+      }
+    })
+  },
   
   regionchange: function(){
     var that = this;
