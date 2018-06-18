@@ -80,3 +80,18 @@
   border: 1px solid lightgray;
   line-height: 30px;
 }
+
+.helpPage{
+  color: #909090;
+  font-weight: 100;
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.help{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}

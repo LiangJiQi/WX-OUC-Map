@@ -1,5 +1,10 @@
 <!--pages/navigation/navigation.wxml-->
 <view class='background' style='height:{{fullWindows}}px'>
+
+<view class='helpPage'>
+ <navigator open-type='navigate' class='help' url='../help/help'>Help</navigator>
+</view>
+
 <view class='viewContentmain' style='height:{{viewSearch}}px'>
 <view class='viewContentinputmain'>
 

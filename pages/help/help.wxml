@@ -11,7 +11,7 @@
   <view class='titleCentent'>
   <view class='dataTitle'>关于彩色标记位置</view>
   </view>
-  <view class='showMapData'>移动地图即可改变彩色标记在地图中的位置，将它移到想查看位置点，即可显示介绍内容。点击改彩色标记即可打开外部地图进行导航。</view>
+  <view class='showMapData'>移动地图即可改变彩色标记在地图中的位置，将它移到想查看位置点，即可显示介绍内容。点击该彩色标记即可打开外部地图进行导航。</view>
 
   <view class='titleCentent'>
   <view class='dataTitle'>关于搜索位置功能</view>
@@ -27,7 +27,7 @@
 
 <view class='contentmain'>
 <view class='contentbutton' >
-  <button style='background-color: #A8EFFB;color: #A0AFA9;' size='mini' bindtap='start'>开始使用</button>
+  <button style='background-color: #A8EFFB;color: #A0AFA9;' size='mini' bindtap='start'>返回使用</button>
   </view>
   <view class='contentbutton'>
   <button style='background-color: #A8EFFB;color: #A0AFA9;' size='mini' bindtap='upbug'>报个bug</button>
