@@ -4,7 +4,7 @@
 <map id="map" class='map' longitude="{{longitude}}" latitude="{{latitude}}" scale="20" controls="{{controls}}" bindtap="clickMap" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location='true' style="height: {{mapHeight}}px;"></map>
 </view>
 <view>
-  <scroll-view scroll-y style='height:{{scrollHeight}}px;' scroll-top="100px">
+  <scroll-view scroll-y style='height:{{scrollHeight}}px;' scroll-top="10px">
   <view>
   <view class='titleCentent'>
   <view class='dataTitle'>所在位置</view>

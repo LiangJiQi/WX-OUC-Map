@@ -949,6 +949,417 @@ var MapData = [
         name: '工程学院',
         info: "设有海洋工程、土木工程、机电工程、自动化4个系；现有港口航道及海岸工程、船舶与海洋工程、土木工程、工程管理、机械设计制造及其自动化、工业设计、轮机工程、自动化8个本科专业；有水利工程博士后流动站、港口海岸及近海工程博士点和水利工程一级学科硕士点，另有防灾减灾工程及防护工程、工程热物理、控制理论与控制工程、管理科学与工程和机械电子工程5个硕士点，并设有水利工程、项目管理2个工程硕士点。"
       },
+
+      //以下是寇维护
+      
+      {
+        name: '崂山北区教育超市',
+        latitude2: 36.164575,
+        latitude1: 36.164644,
+        longitude2: 120.500928,
+        longitude1: 120.501003,
+        latitude3: 36.164609,
+        longitude3: 120.500949,
+        info:"一楼清真餐厅，二楼教育超市，三八书店，文具店，眼镜店，药店，三楼海梦咖啡厅，打印店，移动联通营业厅"
+      },
+
+      {
+        name: '海澜餐厅',
+        latitude2: 36.164302,
+        latitude1: 36.164397,
+        longitude2: 120.500826,
+        longitude1: 120.500938,
+        latitude3: 36.164358,
+        longitude3: 120.500890,
+        info: "海澜"
+      },
+
+      {
+        name: '崂山北区夜宵厅',
+        latitude2: 36.164419,
+        latitude1: 36.164523,
+        longitude2: 120.501164,
+        longitude1: 120.501716,
+        latitude3: 36.164466,
+        longitude3: 120.501410,
+        info: "崂山北区夜宵厅"
+
+      },
+
+      {
+        name: '第一食堂',
+        latitude2: 36.164033,
+        latitude1: 36.164371,
+        longitude2: 120.501019,
+        longitude1: 120.501502,
+        latitude3: 36.164219,
+        longitude3: 120.501335,
+        info: '第一食堂',
+      },
+
+      {
+        name: '崂山北区浴室',
+        latitude2: 36.163869,
+        latitude1: 36.164029,
+        longitude2: 120.501485,
+        longitude1: 120.501925,
+        latitude3: 36.163990,
+        longitude3: 120.501732,
+        info:"崂山北区浴室"
+      },
+
+
+      {
+        name: '速递易',
+        latitude2: 36.164072,
+        latitude1: 36.164232,
+        longitude2: 120.501700,
+        longitude1: 120.502022,
+        latitude3: 36.164133,
+        longitude3: 120.501840,
+        info:"速递易"
+      },
+
+      {
+        name: '北区宿舍五号楼',
+        latitude2: 36.164709,
+        latitude1: 36.165133,
+        longitude2: 120.501378,
+        longitude1: 120.502108,
+        latitude3: 36.164917,
+        longitude3: 120.501797,
+        info: '北区宿舍五号楼',
+
+      },
+      {
+        name: '北区宿舍六号楼',
+        latitude2: 36.165350,
+        latitude1: 36.165735,
+        longitude2: 120.501453,
+        longitude1: 120.502247,
+        latitude3: 36.165527,
+        longitude3: 120.501904,
+        info: '北区宿舍六号楼',
+      },
+
+
+      {
+        name: '北区宿舍七号楼',
+        latitude2: 36.165869,
+        latitude1: 36.165965,
+        longitude2: 120.501968,
+        longitude1: 120.503052,
+        latitude3: 36.165947,
+        longitude3: 120.502499,
+        info: '北区宿舍七号楼',
+
+      },
+
+      {
+        name: '北区宿舍九号楼',
+        latitude2: 36.165120,
+        latitude1: 36.165549,
+        longitude2: 120.502515,
+        longitude1: 120.503186,
+        latitude3: 36.165337,
+        longitude3: 120.502827,
+        info: '北区宿舍九号楼',
+      },
+      {
+        name: '北区宿舍八号楼',
+        latitude2: 36.164497,
+        latitude1: 36.164934,
+        longitude2: 120.502424,
+        longitude1: 120.503100,
+        latitude3: 36.164717,
+        longitude3: 120.502746,
+        info: '北区宿舍八号楼',
+      },
+
+      {
+        name: '北区宿舍十号楼',
+        latitude2: 36.164471,
+        latitude1: 36.164592,
+        longitude2: 120.503309,
+        longitude1: 120.503857,
+        latitude3: 36.164523,
+        longitude3: 120.503567,
+        info: '北区宿舍十号楼',
+
+      },
+      {
+        name: '北区宿舍十一号楼',
+        latitude2: 36.164726,
+        latitude1: 36.164847,
+        longitude2: 120.503299,
+        longitude1: 120.503840,
+        latitude3: 36.164787,
+        longitude3: 120.503556,
+        info: '北区宿舍十一号楼',
+      },
+
+      {
+        name: '北区宿舍十二号楼',
+        latitude2: 36.164999,
+        latitude1: 36.165112,
+        longitude2: 120.503379,
+        longitude1:120.503733,
+        latitude3: 36.165055,
+        longitude3: 120.503551,
+        info: '北区宿舍十二号楼',
+      },
+
+      {
+        name: '北区宿舍十三号楼',
+        latitude2: 36.165267,
+        latitude1: 36.165380,
+        longitude2: 120.503342,
+        longitude1: 120.503728,
+        latitude3: 36.165324,
+        longitude3: 120.503551,
+        info: '北区宿舍十三号楼',
+      },
+
+      {
+        name: '北区宿舍十四号楼',
+        latitude2: 36.165519,
+        latitude1: 36.165636,
+        longitude2: 120.503304,
+        longitude1: 120.503846,
+        latitude3: 36.165579,
+        longitude3: 120.503588,
+        info: '北区宿舍十四号楼',
+      },
+
+      {
+        name: '北区宿舍十五号楼',
+        latitude2: 36.164523,
+        latitude1: 36.164644,
+        longitude2: 120.504034,
+        longitude1: 120.504565,
+        latitude3: 36.164583,
+        longitude3: 120.504270,
+        info: '北区宿舍十五号楼',
+      },
+
+      {
+        name: '北区宿舍十六号楼',
+        latitude2: 36.164791,
+        latitude1: 36.164904,
+        longitude2: 120.504039,
+        longitude1: 120.504575,
+        latitude3: 36.164843,
+        longitude3: 120.504254,
+        info: '北区宿舍十六号楼',
+      },
+
+      {
+        name: '北区宿舍十七号楼',
+        latitude2: 36.165042,
+        latitude1: 36.165168,
+        longitude2: 120.504017,
+        longitude1: 120.504549,
+        latitude3: 36.165107,
+        longitude3: 120.504259,
+        info: '北区宿舍十七号楼',
+      },
+
+      {
+        name: '北区宿舍十八号楼',
+        latitude2: 36.165337,
+        latitude1: 36.165441,
+        longitude2: 120.504007,
+        longitude1: 120.504522,
+        latitude3: 36.165380,
+        longitude3: 120.504264,
+        info: '北区宿舍十八号楼',
+      },
+
+      {
+        name: '北区宿舍十九号楼',
+        latitude2: 36.165575,
+        latitude1: 36.165692,
+        longitude2: 120.503985,
+        longitude1: 120.504345,
+        latitude3: 36.165631,
+        longitude3: 120.504189,
+        info: '北区宿舍十九号楼',
+      },
+
+      {
+        name: '北区宿舍二十号楼',
+        latitude2: 36.166220,
+        latitude1: 36.166450,
+        longitude2: 120.502124,
+        longitude1: 120.502966,
+        latitude3: 36.166367,
+        longitude3: 120.502580,
+        info: '北区宿舍二十号楼',
+      },
+
+      {
+        name: '崂山校医院',
+        latitude2: 36.166571,
+        latitude1: 36.166766,
+        longitude2: 120.502285,
+        longitude1: 120.503492,
+        latitude3: 36.166705,
+        longitude3: 120.503030,
+        info: '崂山校医院',
+      },
+
+      {
+        name: '网球场',
+        latitude2: 36.163613,
+        latitude1: 36.164241,
+        longitude2: 120.501974,
+        longitude1: 120.502768,
+        latitude3: 36.163856,
+        longitude3: 120.502274,
+        info: '网球场',
+      },
+
+      {
+        name: '东区操场',
+        latitude2: 36.162387,
+        latitude1: 36.164094,
+        longitude2: 120.502553,
+        longitude1: 120.504334,
+        latitude3: 36.163336,
+        longitude3: 120.503508,
+        info: '东区操场',
+
+      },
+      {
+        name: '北门',
+        latitude2: 36.166939,
+        latitude1: 36.166969,
+        longitude2: 120.503325,
+        longitude1: 120.503395,
+        latitude3: 36.166948,
+        longitude3: 120.503363,
+        info:'北门',
+      },
+
+      {
+        name: '东门',
+        latitude2: 36.162193,
+        latitude1: 36.162240,
+        longitude2: 120.504162,
+        longitude1: 120.504248,
+        latitude3: 36.162223,
+        longitude3: 120.504216,
+        info: '东门',
+
+      },
+
+      //以下是孟维护
+
+      {
+        name: '水泵房',
+        longitude2: 120.495515,
+        longitude1: 120.495815,
+        latitude1: 36.159783,
+        latitude2: 36.159481,
+        info: "水泵房"
+      },
+
+      {
+        name: '海洋地球科学学院',
+        longitude2: 120.495391,
+        longitude1: 120.496341,
+        latitude1: 36.160568,
+        latitude2: 36.160482,
+        info: '海洋地球科学学院',
+      },
+      {
+        name: '海洋地球科学学院',
+        longitude2: 120.495585,
+        longitude1: 120.496443,
+        latitude1: 120.496239,
+        latitude2: 36.160482,
+        info: '海洋地球科学学院',
+      },
+      {
+        name: '海洋与大气学院',
+        longitude2: 120.495708,
+        longitude1: 120.496480,
+        latitude1: 36.162106,
+        latitude2: 36.161335,
+        info: '海洋与大气学院',
+      },
+      {
+        name: '化工化学院',
+        longitude2: 120.494292,
+        longitude1: 120.494796,
+        latitude1: 36.161764,
+        latitude2: 36.160768,
+        info: '化工化学院',
+      },
+      {
+        name: '化工化学院2（研究所）？',
+        longitude2: 120.494850,
+        longitude1: 120.495467,
+        latitude1: 36.160950,
+        latitude2: 36.160590,
+        info: '化工化学院2（研究所）？',
+      },
+      {
+        name: '材料化学与工程学院',
+        longitude2: 120.494914,
+        longitude1: 120.495510,
+        latitude1: 36.161898,
+        latitude2: 36.161539,
+        info: '材料化学与工程学院',
+      },
+      {
+        name: '变电所',
+        longitude2: 120.493530,
+        longitude1: 120.494018,
+        latitude1: 36.161079,
+        latitude2: 36.160724,
+        info: '变电所',
+      },
+      {
+        name: '停车场',
+        longitude2: 120.493868,
+        longitude1: 120.494083,
+        latitude1: 36.161894,
+        latitude2: 36.161660,
+        info: '停车场',
+      },
+      {
+        name: '换热站',
+        longitude2: 120.493396,
+        longitude1: 120.493868,
+        latitude1: 36.162115,
+        latitude2: 36.161686,
+        info: '换热站',
+      },
+      {
+        name: '工程学院1',
+        longitude2: 120.493959,
+        longitude1: 120.494522,
+        latitude1: 36.162539,
+        latitude2: 36.161872,
+        info: '工程学院1',
+      },
+      {
+        name: '工程学院（机电工程系？）2',
+        longitude2: 120.494522,
+        longitude1: 120.495381,
+        latitude1: 36.162500,
+        latitude2: 36.162024,
+        info: '工程学院（机电工程系？）2',
+      },
+      {
+        name: '工程学院3？？（建设工程检测中心）',
+        longitude2: 120.494522,
+        longitude1: 120.495091,
+        latitude1: 36.163028,
+        latitude2: 36.162539,
+        info: '工程学院3？？（建设工程检测中心）',
+      },
   ]
 
 module.exports = {

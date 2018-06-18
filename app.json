@@ -2,7 +2,8 @@
   "pages":[
     "pages/map/map",
     "pages/navigation/navigation",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/help/help"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -17,7 +18,7 @@
     "selectedColor": "#98DFEB",
     "list": [{
       "pagePath": "pages/map/map",
-      "text": "瞧一瞧",
+      "text": "看一看",
       "iconPath": "icon/resources/school.png",
       "selectedIconPath":"icon/resources/school.png"
     },{
