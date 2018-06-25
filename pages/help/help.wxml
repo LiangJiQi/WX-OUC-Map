@@ -1,40 +1,40 @@
 <view class='background'>
 
-<view>
-  <scroll-view scroll-y style='height:{{scrollHeight}}px;' scroll-top="10px">
+  <view>
+    <scroll-view scroll-y style='height:{{scrollHeight}}px;' scroll-top="10px">
 
-  <view class='titleCentent'>
-  <view class='dataTitle'>关于定位的问题</view>
+      <view class='titleCentent'>
+        <view class='dataTitle'>关于定位的问题</view>
+      </view>
+      <view class='showMapData'>由微信小程序平台提供定位服务，绿点或蓝点即为当前定位位置，若黑白标记点与该点不重合请点击地图右下方的定位按钮，重合时即表示定位成功，建议打开WIFI与GPS和移至室外使用更佳。</view>
+
+      <view class='titleCentent'>
+        <view class='dataTitle'>关于彩色标记位置</view>
+      </view>
+      <view class='showMapData'>移动地图即可改变彩色标记在地图中的位置，将它移到想查看位置点，即可显示介绍内容。点击该彩色标记即可打开外部地图进行导航。缩放地图可观察与所在点的相对方位。</view>
+
+      <view class='titleCentent'>
+        <view class='dataTitle'>关于搜索位置功能</view>
+      </view>
+      <view class='showMapData'>搜不到我想要的位置？请尝试修改关键词，例如“5号楼”——>“五号楼”，“学生宿舍”——>“学生公寓”，“水产学院”——>“院”。</view>
+
+      <view class='titleCentent'>
+        <view class='dataTitle'>关于地图数据不正确</view>
+      </view>
+      <view class='showMapData'>该地图数据是人力测量，又由于建筑与经纬度偏差，故数据会有一定的偏差，只要不是很离谱都是允许的。但若有关于如描述出错的或范围明显出错的，数据不准确的，请联系我们。</view>
+
+      <text>\n</text>
+
+      <view class='contentmain'>
+        <view class='contentbutton'>
+          <button style='background-color: #A8EFFB;color: #A0AFA9;' size='mini' bindtap='start'>返回使用</button>
+        </view>
+        <view class='contentbutton'>
+          <button style='background-color: #A8EFFB;color: #A0AFA9;' size='mini' bindtap='upbug'>联系我们</button>
+        </view>
+      </view>
+    </scroll-view>
   </view>
-  <view class='showMapData'>由微信小程序平台提供定位服务，绿点或蓝点即为当前定位位置，若黑白标记点与该点不重合请点击地图右下方的定位按钮，重合时即表示定位成功，建议打开WIFI和GPS使用更佳。</view>
-
-  <view class='titleCentent'>
-  <view class='dataTitle'>关于彩色标记位置</view>
-  </view>
-  <view class='showMapData'>移动地图即可改变彩色标记在地图中的位置，将它移到想查看位置点，即可显示介绍内容。点击该彩色标记即可打开外部地图进行导航。</view>
-
-  <view class='titleCentent'>
-  <view class='dataTitle'>关于搜索位置功能</view>
-  </view>
-  <view class='showMapData'>搜不到我想要的位置？请尝试修改关键词，例如“5号楼”——>“五号楼”，“学生宿舍”——>“学生公寓”，“水产学院”——>“院”</view>
-
-  <view class='titleCentent'>
-  <view class='dataTitle'>关于地图数据不正确</view>
-  </view>
-  <view class='showMapData'>该地图数据是人力测量，又由于建筑与经纬度偏差，故数据会有一定的偏差，只要不是很离谱都是允许的。但若有关于如描述出错的或范围明显出错的，请联系我们。</view>
-
-  <text>\n</text>
-
-<view class='contentmain'>
-<view class='contentbutton' >
-  <button style='background-color: #A8EFFB;color: #A0AFA9;' size='mini' bindtap='start'>返回使用</button>
-  </view>
-  <view class='contentbutton'>
-  <button style='background-color: #A8EFFB;color: #A0AFA9;' size='mini' bindtap='upbug'>报个bug</button>
-   </view>
-</view>
-  </scroll-view>
-</view>
 
 
 </view>
