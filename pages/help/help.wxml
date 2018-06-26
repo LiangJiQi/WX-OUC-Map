@@ -16,7 +16,7 @@
       <view class='titleCentent'>
         <view class='dataTitle'>关于搜索位置功能</view>
       </view>
-      <view class='showMapData'>搜不到我想要的位置？请尝试修改关键词，例如“5号楼”——>“五号楼”，“学生宿舍”——>“学生公寓”，“水产学院”——>“院”。</view>
+      <view class='showMapData'>搜不到我想要的位置？请尝试修改关键词，例如“5号楼”——>“五号楼”，“学生宿舍”——>“学生公寓”，“水产学院”——>“院”。搜索成功后，点击想要查看的位置稍等即可。</view>
 
       <view class='titleCentent'>
         <view class='dataTitle'>关于地图数据不正确</view>
