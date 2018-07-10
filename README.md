@@ -36,7 +36,9 @@
 
 * 1
   * map.js文件中将地图组件的两个markers标记一个设为当前位置，另一个设为地图中心点位置，用计时函数不断检测两个标记的位置经纬度是否在校内某个地点范围内
+
 '''
+
 if (that.data.markers[1].latitude <= that.data.mapDataList.MapDataList[i].latitude1 && that.data.markers[1].latitude >= that.data.mapDataList.MapDataList[i].latitude2 && that.data.mapDataList.MapDataList[i].longitude1 >= that.data.markers[1].longitude && that.data.mapDataList.MapDataList[i].longitude2 <= that.data.markers[1].longitude)
 
 '''
