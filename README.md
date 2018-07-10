@@ -159,7 +159,8 @@ if (that.data.markers[1].latitude <= that.data.mapDataList.MapDataList[i].latitu
 ```
   
 * 4
-  * mapData.js文件为海大校内各个地点范围经纬度**（目前数据还期待完善）**
+  * mapData.js文件为海大校内各个地点范围经纬度
+**（目前数据还期待完善）**
 ```
  {
     id: 2100,
