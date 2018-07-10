@@ -17,7 +17,7 @@
   
   >可微信搜索“OUC地图”小程序
   
-  ![微信小程序二维码](http://m.qpic.cn/psb?/V10as9kA4VqXhE/*MI1UEmSDVsx2jnwlAHriqy3Jqk5UIQ3CrcA4JLO8Mk!/b/dCEBAAAAAAAA&bo=WAGIAQAAAAARB.A!&rf=viewer_4)
+  ![微信小程序二维码](https://github.com/LiangJiQi/WX-OUC-Map/blob/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg?raw=true)
   
 ## 主要文件介绍
 
