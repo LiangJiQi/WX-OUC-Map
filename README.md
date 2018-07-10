@@ -17,5 +17,5 @@
   
   >可微信搜索“OUC地图”小程序
   
-  ！[微信小程序二维码](http://m.qpic.cn/psb?/V10as9kA4VqXhE/*MI1UEmSDVsx2jnwlAHriqy3Jqk5UIQ3CrcA4JLO8Mk!/b/dCEBAAAAAAAA&bo=WAGIAQAAAAARB.A!&rf=viewer_4)
+  ![微信小程序二维码](http://m.qpic.cn/psb?/V10as9kA4VqXhE/*MI1UEmSDVsx2jnwlAHriqy3Jqk5UIQ3CrcA4JLO8Mk!/b/dCEBAAAAAAAA&bo=WAGIAQAAAAARB.A!&rf=viewer_4)
   ## 主要代码介绍
