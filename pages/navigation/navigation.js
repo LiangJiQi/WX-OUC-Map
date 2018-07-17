@@ -74,7 +74,38 @@ Page({
     that.setData({
       searchMapData: e.detail.value
     })
+    if (this.data.searchMapData == "") {
+      this.setData({
+        searchAns: [],
+        mess:""
+      })
+      return
+    }
+    var j = 0;
 
+    for (var i = 0; i < this.data.MapDataList.MapDataList.length; i++) {
+      if (this.data.MapDataList.MapDataList[i].name.indexOf(this.data.searchMapData) >= 0) {
+        if (this.data.searchMapData == "开发者") {
+          wx.showModal({
+            title: '哇哦，你打开了一个小彩蛋😆',
+            content: this.data.MapDataList.MapDataList[i].name + "名单:" + this.data.MapDataList.MapDataList[i].info,
+            showCancel: false
+          })
+          j++;
+          break;
+        }
+        var temp1 = "searchAns[" + j + "].name"
+        var temp2 = "searchAns[" + j + "].info"
+        var temp3 = "searchAns[" + j + "].index"
+        this.setData({
+          mess: "搜索结果为：",
+          [temp1]: this.data.MapDataList.MapDataList[i].name,
+          [temp2]: this.data.MapDataList.MapDataList[i].info,
+          [temp3]: i
+        })
+        j++;
+      }
+    }
   },
 
   search: function(){
@@ -93,6 +124,15 @@ Page({
      var j = 0
      for (var i = 0;i < this.data.MapDataList.MapDataList.length;i++){
        if(this.data.MapDataList.MapDataList[i].name.indexOf(this.data.searchMapData) >= 0){
+         if (this.data.searchMapData == "开发者") {
+           wx.showModal({
+             title: '哇哦，你打开了一个小彩蛋😆',
+             content: this.data.MapDataList.MapDataList[i].name + "名单:" + this.data.MapDataList.MapDataList[i].info,
+             showCancel: false
+           })
+           j++;
+           break;
+         }
          var temp1 = "searchAns["+j+"].name"
          var temp2 = "searchAns["+j+"].info"
          var temp3 = "searchAns["+j+"].index"

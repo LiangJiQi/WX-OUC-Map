@@ -11,12 +11,12 @@
       <view class='titleCentent'>
         <view class='dataTitle'>关于彩色标记位置</view>
       </view>
-      <view class='showMapData'>移动地图即可改变彩色标记在地图中的位置，将它移到想查看位置点，即可显示介绍内容。点击该彩色标记即可打开外部地图进行导航。缩放地图可观察与所在点的相对方位。</view>
+      <view class='showMapData'>移动地图即可改变彩色标记在地图中的位置，将它移到想查看位置点，即可显示介绍内容。点击该彩色标记即可打开外部地图进行导航。推荐使用高德地图或腾讯地图。缩放地图可观察与所在点的相对方位。</view>
 
       <view class='titleCentent'>
         <view class='dataTitle'>关于搜索位置功能</view>
       </view>
-      <view class='showMapData'>搜不到我想要的位置？请尝试修改关键词，例如“5号楼”——>“五号楼”，“学生宿舍”——>“学生公寓”，“水产学院”——>“院”。搜索成功后，点击想要查看的位置稍等即可。</view>
+      <view class='showMapData'>搜不到我想要的位置？请尝试修改关键词，例如“5号楼”——>“五号楼”，“学生宿舍”——>“学生公寓”，“水产学院”——>“院”。搜索成功后，点击想要查看的位置稍等即可。善用搜索功能能快速找到位置哦。</view>
 
       <view class='titleCentent'>
         <view class='dataTitle'>关于地图数据不正确</view>
